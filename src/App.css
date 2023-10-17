@@ -35,3 +35,9 @@ body {
 .row .col {
     z-index: 2;
 }
+
+.image-resize img{
+    height: 30vw;
+    width: auto;
+    /* background: red; */
+}
