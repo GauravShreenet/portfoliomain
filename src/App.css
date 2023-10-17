@@ -19,8 +19,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    /* background: var(--body-bg); */
-    background: red; 
+    background: var(--body-bg);
+    /* background: red;  */
 }
 
 .menu ul li {
