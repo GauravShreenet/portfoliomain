@@ -19,10 +19,19 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--body-bg);
-    /* background: red;  */
+    /* background: var(--body-bg); */
+    background: red; 
 }
 
-.hamburger-react {
+.menu ul li {
+    font-size: 5rem;
+    font-weight: bolder;
+    width: auto;
+    /* background: black; */
+    margin: 0 60vh;
+}
+
+.hamburger-react,
+.row .col {
     z-index: 2;
 }
