@@ -8,9 +8,9 @@ export const Home = () => {
             <div className="col">
                 sadasdasdas
             </div>
-            <div className="col bg-danger rounded-circle">
-                <div className="image-resize d-flex justify-content-center mb-5">
-                    <img src={imagePortfolio} alt="" />
+            <div className="col bg-danger rounded-circle pt-3" style={{overflow: 'hidden'}}>
+                <div className="image-resize d-flex justify-content-center">
+                    <img src={imagePortfolio} alt="Portfolio Image" className='img-fluid' />
                 </div>
             </div>
         </div>
