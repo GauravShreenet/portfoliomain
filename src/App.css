@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg: rgb(0, 0, 0);
+    --text-color: #fff;
+}
+
+body {
+    background: var(--body-bg);
+    color: var(--text-color);
+}
+
+.menu {
+    
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--body-bg);
+    /* background: red;  */
+}
+
+.hamburger-react {
+    z-index: 2;
+}
