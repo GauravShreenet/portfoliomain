@@ -8,13 +8,19 @@ export const Home = () => {
                 <div className="col mt-5 p-5">
                     Hi I'm <span className='fs-1 fw-bold'>Gaurav Shreenet</span><br />
                     <span className="tag">Jr. Front-End Dev.</span><br /><br />
-                    <span className='mt-5'>React is my canvas; code is my art. I bring ideas to life, crafting inspiring user interfaces, one React component at a time.</span>
+                    <span className='mt-5'>React is my canvas; code is my art. I bring ideas to life, crafting inspiring user interfaces.</span>
 
                 </div>
                 <div className="col bg-danger rounded-circle pt-3" style={{ overflow: 'hidden' }}>
                     <div className="image-resize d-flex justify-content-center">
                         <img src={imagePortfolio} alt="Portfolio Image" className='img-fluid' />
                     </div>
+                </div>
+            </div>
+
+            <div className="row">
+                <div className="col" style={{fontSize: '5rem', fontWeight: 'bold'}}>
+                Transforming ideas into interactive web experiences, one component at a time.
                 </div>
             </div>
 
@@ -36,7 +42,9 @@ export const Home = () => {
                         <div class="mb-3">
                             <textarea class="form-control" id="textarea" rows="3" placeholder='Your Message'></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <div className='d-flex justify-content-end'>
+                            <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
                     </form>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
 }
 
 :root {
@@ -46,8 +47,4 @@ body {
 .contact {
     font-size: 3rem;
     font-weight: bold;
-}
-
-.contact {
-
 }
