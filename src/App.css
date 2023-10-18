@@ -31,8 +31,7 @@ body {
     margin: 0 60vh;
 }
 
-.hamburger-react,
-.logo{
+.hamburger-react {
     z-index: 999;
 }
 
