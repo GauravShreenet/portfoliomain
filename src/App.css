@@ -31,6 +31,15 @@ body {
     margin: 3vh 0;
 }
 
+.menu ul li:hover {
+    font-size: 4rem;
+    font-weight: bolder;
+    width: auto;
+    color: red;
+    /* background: black; */
+    margin: 3vh 0;
+}
+
 .hamburger-react {
     z-index: 999;
 }
