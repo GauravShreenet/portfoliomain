@@ -31,7 +31,7 @@ export const NavBar = () => {
             </div>
             {menuTransitions(
                 (menuStyles, item) => item && (
-                    <animated.div className="menu md p-5 z-2" style={{ ...menuStyles }}>
+                    <animated.div className="menu p-5 z-2" style={{ ...menuStyles}}>
                         <NavMenu  isOpen={isOpen}/>
                     </animated.div>
                 )

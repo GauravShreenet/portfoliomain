@@ -36,8 +36,8 @@ body {
 }
 
 .image-resize img{
-    height: 35vw;
-    /* width: 40vw; */
+    height: 70vh;
+    width: 70vh;
     /* background: red; */
 }
 
@@ -47,7 +47,15 @@ body {
     font-weight: bold;
 }
 
+.formField {
+
+}
+
 .form-control::placeholder {
     color: rgb(185, 185, 185);
-    font-weight: bold;
-  }
+    /* font-weight: bold; */
+}
+
+.formField:focus {
+    border-bottom: 2px solid #007BFF;
+}
