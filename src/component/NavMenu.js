@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { useTransition, animated, config } from 'react-spring';
 
-export const NavMenu = ({isOpen}) => {
+export const NavMenu = ({toggleMenu, isOpen}) => {
 
     const textTransitions = useTransition(isOpen, {
         from: { transform: 'translateY(20px)', opacity: 0 },
@@ -22,7 +23,7 @@ export const NavMenu = ({isOpen}) => {
                                             }}
                                             className='mt-2'
                                         >
-                                            Home
+                                            <Link to="/" style={{textDecoration: 'none', color: 'white'}} onClick={()=> toggleMenu(isOpen)}>Home</Link>
                                         </animated.div>
                                     )
                                 )}
@@ -34,10 +35,12 @@ export const NavMenu = ({isOpen}) => {
                                             style={{
                                                 ...textStyles,
                                                 cursor: 'pointer',
+                                                
                                             }}
                                             className='mt-2'
                                         >
-                                            Skills
+                                            <Link to="/skills" style={{textDecoration: 'none', color: 'white'}} onClick={()=> toggleMenu(isOpen)}>Skills</Link>
+                                            
                                         </animated.div>
                                     )
                                 )}

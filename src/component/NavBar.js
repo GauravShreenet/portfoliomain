@@ -32,7 +32,7 @@ export const NavBar = () => {
             {menuTransitions(
                 (menuStyles, item) => item && (
                     <animated.div className="menu p-5 z-2" style={{ ...menuStyles}}>
-                        <NavMenu  isOpen={isOpen}/>
+                        <NavMenu  toggleMenu={toggleMenu} isOpen={isOpen}/>
                     </animated.div>
                 )
             )}

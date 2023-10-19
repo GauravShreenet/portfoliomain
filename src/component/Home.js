@@ -9,7 +9,8 @@ export const Home = () => {
                     <div className='m-5'>
                         Hi I'm <span className='fs-1 fw-bold'>Gaurav Shreenet</span><br />
                         <span className="tag">Jr. Front-End Dev.</span><br /><br />
-                        <span className='mt-5'>React is my canvas; code is my art. I bring ideas to life, crafting inspiring user interfaces.</span>
+                        <span className='mt-5'>React is my canvas; code is my art. I bring ideas to life, crafting inspiring user interfaces.</span><br/><br/> <br/>
+                        <button className='btn btn-primary fw-bold'>Download CV <i class="fa-solid fa-download"></i></button>
                     </div>
                 </div>
                 <div className="col-md mt-5">
