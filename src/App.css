@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    
 }
 
 :root {
-    --body-bg: rgb(0, 0, 0);
+    --body-bg: #0c090a;
     --text-color: #fff;
 }
 
@@ -15,8 +15,6 @@ body {
 }
 
 .menu {
-    
-    z-index: 998;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,8 +36,8 @@ body {
 }
 
 .image-resize img{
-    height: 30vw;
-    width: auto;
+    height: 35vw;
+    /* width: 40vw; */
     /* background: red; */
 }
 
@@ -48,3 +46,8 @@ body {
     font-size: 3rem;
     font-weight: bold;
 }
+
+.form-control::placeholder {
+    color: rgb(185, 185, 185);
+    font-weight: bold;
+  }
