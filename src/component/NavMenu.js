@@ -10,8 +10,8 @@ export const NavMenu = ({isOpen}) => {
         
     });
   return (
-    <>  
-        <ul className="list-unstyled text-center p-5">
+    <div className='d-flex justify-content-center p-5'>  
+        <ul className="list-unstyled">
                             <li>
                                 {textTransitions(
                                     (textStyles, item) => item && (
@@ -88,6 +88,6 @@ export const NavMenu = ({isOpen}) => {
                                 )}
                             </li>
                         </ul>
-    </>
+    </div>
   )
 }

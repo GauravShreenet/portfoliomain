@@ -24,11 +24,11 @@ body {
 }
 
 .menu ul li {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bolder;
     width: auto;
     /* background: black; */
-    margin: 0 60vh;
+    margin: 3vh 0;
 }
 
 .hamburger-react {
@@ -47,8 +47,10 @@ body {
     font-weight: bold;
 }
 
-.formField {
-
+.form-control {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(189, 189, 189);
 }
 
 .form-control::placeholder {
@@ -56,6 +58,7 @@ body {
     /* font-weight: bold; */
 }
 
-.formField:focus {
-    border-bottom: 2px solid #007BFF;
+.form-control:focus {
+    border-bottom: 3px solid #ffffff;
+    box-shadow: none;
 }

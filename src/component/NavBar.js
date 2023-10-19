@@ -22,7 +22,7 @@ export const NavBar = () => {
     return (
         <div className="container p-5 position-sticky top-0">
             <div className="row z-3">
-                <div className="col position-relative">
+                <div className="col z-3 position-relative">
                     <h1 className='logo'>Logo</h1>
                 </div>
                 <div className="col position-relative d-flex justify-content-end">
