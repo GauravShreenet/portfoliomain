@@ -3,8 +3,11 @@ import { CardView } from './CardView'
 
 export const Skills = () => {
     return (
-        <div>
-            <CardView />
+        <div className='container' id="skills">
+            <div className="row">
+                
+            </div>
+
         </div>
     )
 }

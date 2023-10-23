@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    
+    font-family: 'Open Sans', sans-serif; 
 }
 
 :root {
@@ -15,6 +14,7 @@ body {
 }
 
 .menu {
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -23,11 +23,15 @@ body {
     /* background: red;  */
 }
 
+.skills {
+    background: var(--body-bg);
+    color: var(--text-color);
+}
+
 .menu ul li {
     font-size: 4rem;
     font-weight: bolder;
     width: auto;
-    /* background: black; */
     margin: 3vh 0;
 }
 
@@ -35,8 +39,6 @@ body {
     font-size: 4rem;
     font-weight: bolder;
     width: auto;
-    color: red;
-    /* background: black; */
     margin: 3vh 0;
 }
 
@@ -50,10 +52,14 @@ body {
     /* background: red; */
 }
 
-.tag,
-.contact {
+.tag {
     font-size: 3rem;
     font-weight: bold;
+}
+
+.contact {
+    font-size: 12rem;
+    font-family: 'Abril Fatface', serif;
 }
 
 .form-control {
@@ -70,4 +76,18 @@ body {
 .form-control:focus {
     border-bottom: 3px solid #ffffff;
     box-shadow: none;
+}
+
+.get.move-left {
+    transform: translateX(-1000px);
+    transition: transform 0.5s ease;
+}
+
+.touch.move-right {
+    transform: translateX(1000px);
+    transition: transform 0.5s ease;
+}
+
+.get-in {
+    min-height: 500vh;
 }

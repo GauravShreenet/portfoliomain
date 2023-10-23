@@ -6,7 +6,7 @@ import { Skills } from './component/Skills';
 
 function App() {
   return (
-  
+    <>
       <div className="wrapper">
         <NavBar />
         <Routes>
@@ -14,7 +14,7 @@ function App() {
           <Route path='/skills' element={ <Skills />} />
         </Routes>
       </div>
-    
+    </>
 
   );
 }
