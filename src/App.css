@@ -76,3 +76,8 @@ body {
     border-bottom: 3px solid #ffffff;
     box-shadow: none;
 }
+
+.fill-none {
+    stroke: var(--text-color); /* Set the stroke (border) color to your desired color */
+    stroke-width: 2;
+}
