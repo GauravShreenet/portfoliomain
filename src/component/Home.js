@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react'
+
 import imagePortfolio from "../asset/1.png"
 
 export const Home = () => {
-
-    const[textMove, setTextMove] = useState(0);
        
     return (
-        <div className="container" id='home'>
+        <div className="mx-5 px-5" id='home'>
             <div className="row">
                 <div className="col-md d-flex align-items-center">
                     <div className='m-5'>
@@ -16,9 +14,9 @@ export const Home = () => {
                         <button className='btn btn-primary fw-bold'>Download CV <i class="fa-solid fa-download"></i></button>
                     </div>
                 </div>
-                <div className="col-md mt-5">
+                <div className="col-lg mt-5">
                     <div className="image-resize d-flex justify-content-center align-items-center">
-                        <img src={imagePortfolio} alt="Portfolio Image" className="img-fluid" />
+                        <img src={imagePortfolio} alt="Portfolio" className="img-fluid" />
                     </div>
                 </div>
             </div>

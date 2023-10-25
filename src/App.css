@@ -4,7 +4,7 @@
 }
 
 :root {
-    --body-bg: #0c090a;
+    --body-bg: #111;
     --text-color: #fff;
 }
 
@@ -14,7 +14,6 @@ body {
 }
 
 .menu {
-    
     position: fixed;
     top: 0;
     left: 0;
@@ -76,18 +75,4 @@ body {
 .form-control:focus {
     border-bottom: 3px solid #ffffff;
     box-shadow: none;
-}
-
-.get.move-left {
-    transform: translateX(-1000px);
-    transition: transform 0.5s ease;
-}
-
-.touch.move-right {
-    transform: translateX(1000px);
-    transition: transform 0.5s ease;
-}
-
-.get-in {
-    min-height: 500vh;
 }

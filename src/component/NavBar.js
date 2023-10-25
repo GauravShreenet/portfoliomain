@@ -1,7 +1,6 @@
 import { Spin as Hamburger } from 'hamburger-react'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
-import { useTransition, animated, config } from 'react-spring';
+import { useTransition, animated } from 'react-spring';
 import { NavMenu } from './NavMenu';
 
 export const NavBar = () => {
@@ -20,7 +19,7 @@ export const NavBar = () => {
     }
 
     return (
-        <div className="container p-5 position-sticky top-0">
+        <div className=" m-2 p-5 position-sticky top-0">
             <div className="row z-3">
                 <div className="col z-3 position-relative">
                     <h1 className='logo'>Logo</h1>
