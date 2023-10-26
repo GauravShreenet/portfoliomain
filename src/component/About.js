@@ -1,7 +1,33 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Experience } from './Experience'
 import { Education } from './Education'
 import image from "../asset/aboutPic.jpg"
+import { useInView, useMotionValue, useSpring } from 'framer-motion'
+import { toHaveTextContent } from '@testing-library/jest-dom/matchers'
+
+const AnimatedNum = ({value}) => {
+  const ref = useRef(null)
+
+  const motionValue = useMotionValue(0)
+  const springValue = useSpring(motionValue, { duration: 3000 })
+  const isInView = useInView(ref)
+
+  useEffect(() => {
+    if(isInView){
+      motionValue.set(value);
+    }
+  }, [isInView, value, motionValue])
+
+  useEffect(()=>{
+    springValue.on("change", (latest) => {
+      if(ref.current && latest.toFixed(0) <= value){
+        ref.current.textContent = latest.toFixed(0);
+      }
+    })
+  }, [springValue, value])
+
+  return <span ref={ref}></span>
+}
 
 export const About = () => {
   return (
@@ -45,14 +71,14 @@ export const About = () => {
 
             <div className='d-flex flex-column align-items-end justify-content-center'>
               <span className='fs-1 fw-bold'>
-                10+
+                <AnimatedNum value={10} />+
               </span>
               <h3>Projects</h3>
             </div>
 
             <div className='d-flex flex-column align-items-end justify-content-center'>
               <span className='fs-1 fw-bold'>
-                2
+                <AnimatedNum value={2} />
               </span>
               <h3>Years</h3>
             </div>
