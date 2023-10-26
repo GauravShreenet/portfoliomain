@@ -77,7 +77,15 @@ body {
     box-shadow: none;
 }
 
-.fill-none {
-    stroke: var(--text-color); /* Set the stroke (border) color to your desired color */
-    stroke-width: 2;
+.pulse-element {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
 }

@@ -2,7 +2,7 @@ import { motion ,useScroll } from 'framer-motion'
 import React, { useRef } from 'react'
 import { LiIcon } from './LiIcon'
 
-const Details = ({ postion, company, companyLink, time, address, work }) => {
+const Details = ({ type, time, place, info }) => {
     const ref = useRef(null)
     return (
     <li ref={ref} className='mb-5 d-flex flex-column align-items-center justify-content-between'>
@@ -13,22 +13,21 @@ const Details = ({ postion, company, companyLink, time, address, work }) => {
         whileInView={{y:0}}
         transition={{duration:0.5, type: "spring"}}
         >
-            <h5 className='fw-bold text-capitalize'>{postion}&nbsp;<a href={companyLink}
-                target='_blank'
-                className='primary-info'
-            >@{company}</a></h5>
+            <h5 className='fw-bold text-capitalize'>
+                {type}
+            </h5>
             <span className='text-capitalize'>
-                {time} | {address}
+                {time} | {place}
             </span>
             <p>
-                {work}
+                {info}
             </p>
         </motion.div>
     </li>
     )
 }
 
-export const Experience = () => {
+export const Education = () => {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll(
         {
@@ -37,10 +36,10 @@ export const Experience = () => {
         }
     )
     return (
-        <div className="container">
+        <div className="container mt-5">
             <div className="row">
                 <div className="col text-center">
-                    <h1 className='fw-bolder'>Experience</h1>
+                    <h1 className='fw-bolder'>Education</h1>
                 </div>
             </div>
             <div ref={ref} className='row mt-5 position-relative'>
@@ -52,20 +51,16 @@ export const Experience = () => {
                 <div className="col-11">
                 <ul className='d-flex flex-column align-items-start justify-content-between'>
                     <Details
-                    
-                        postion="Support Technician" company="Reliable IT Solutions"
-                        companyLink="https://www.reliableitsolutions.com.au/"
-                        time="May 2022 - Aug 2022" address="2A Boyle Street, Sutherland, NSW 2232"
-                        work="Operating System troubleshooting. Building workstations according to the customer's needs. Software and Hardware problem-solving."
+                        type="Bachelor's degree, Information Technology"
+                        time="Apr 2020 - Apr 2023" place="Victoria University"
+                        info="Comprehensive education in IT while focusing on the skills and knowledge necessary to create web and mobile applications for a wide range of industries and platforms."
                     />
 
                     <Details
-                        postion="Grocery Supervisor" company="The Greener Grocer"
-                        companyLink=""
-                        time="Apr 2023 - Present" address="Maroubra, New South Wales, Australia"
-                        work="Oversees daily operations in a grocery store, managing staff, inventory, and customer service. Responsible for maintaining stock levels, ensuring a positive shopping experience, and meeting sales and budget goals while adhering to safety and regulatory standards."
+                        type="Bootcamp, Full stack Development"
+                        time="Jul 2023 - Jan 2024" place="Dented Code Academy"
+                        info="Hands-on expertise in HTML, CSS, JavaScript, and React, focusing on practical web development skills through real-world projects and immersive, industry-relevant training, making me well-prepared for front-end web development roles."
                     />
-                    
                 </ul>
                 </div>
             </div>
