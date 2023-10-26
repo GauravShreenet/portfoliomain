@@ -37,7 +37,7 @@ export const Experience = () => {
         }
     )
     return (
-        <div className="container">
+        <div className="container mt-5">
             <div className="row">
                 <div className="col text-center">
                     <h1 className='fw-bolder'>Experience</h1>
