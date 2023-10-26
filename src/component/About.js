@@ -4,6 +4,7 @@ import { Education } from './Education'
 import image from "../asset/aboutPic.jpg"
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import { toHaveTextContent } from '@testing-library/jest-dom/matchers'
+import { Skills } from './Skills'
 
 const AnimatedNum = ({value}) => {
   const ref = useRef(null)
@@ -55,7 +56,7 @@ export const About = () => {
               I'm eager to connect with tech enthusiasts and potential collaborators to explore the limitless possibilities of web development.
             </p>
           </div>
-          <div className="col-4 boxShad ms-5 rounded-4 d-flex justify-content-center align-items-center">
+          <div className="col-4 mb-5 boxShad ms-5 rounded-4 d-flex justify-content-center align-items-center">
             <div className='boxCon rounded-5' />
             <div className="imageAbout d-flex justify-content-center align-items-center">
               <img src={image} alt="Gaurav" className='rounded-4' />
@@ -85,6 +86,7 @@ export const About = () => {
           </div>
         </div>
       </div>
+      <Skills />
       <Experience />
       <Education />
 
