@@ -2,6 +2,7 @@ import { Spin as Hamburger } from 'hamburger-react'
 import React, { useState } from 'react'
 import { useTransition, animated } from 'react-spring';
 import { NavMenu } from './NavMenu';
+import logo from "../asset/gs-logo.png"
 
 export const NavBar = () => {
 
@@ -19,18 +20,21 @@ export const NavBar = () => {
     }
 
     return (
-        <div className=" m-2 p-5 position-sticky top-0">
-            <div className="row z-3">
-                <div className="col z-3 position-relative">
-                    <h1 className='logo'>Logo</h1>
+        <div className=" m-2 p-5 position-fixed" style={{top: '1%', width: '100%'}}>
+            <div className="row">
+                <div className="col">
+                    <div>
+                        <img src={logo} alt="" style={{height: '10vh', width: '15vh'}}/>
+                    </div>
+                    
                 </div>
-                <div className="col position-relative d-flex justify-content-end">
+                <div className="col d-flex justify-content-end">
                     <Hamburger color='rgb(255 255 255)' toggled={isOpen} size="40" rounded toggle={toggleMenu} />
                 </div>
             </div>
             {menuTransitions(
                 (menuStyles, item) => item && (
-                    <animated.div className="menu p-5 z-2" style={{ ...menuStyles}}>
+                    <animated.div className="menu p-5" style={{...menuStyles}}>
                         <NavMenu  toggleMenu={toggleMenu} isOpen={isOpen}/>
                     </animated.div>
                 )

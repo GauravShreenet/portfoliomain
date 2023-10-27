@@ -18,8 +18,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--body-bg);
-    /* background: red;  */
+    background: var(--body-bg); 
 }
 
 .skills {
@@ -46,8 +45,8 @@ body {
 }
 
 .image-resize img{
-    height: 70vh;
-    width: 65vh;
+    height: 80vh;
+    width: 75vh;
     /* background: red; */
 }
 
@@ -57,7 +56,7 @@ body {
 }
 
 .contact {
-    font-size: 12rem;
+    font-size: 12vw;
     font-family: 'Abril Fatface', serif;
 }
 
@@ -98,6 +97,7 @@ body {
 .imageAbout img {
     height: 60vh;
     width: 55vh;
+
 }
 
 .boxShad {

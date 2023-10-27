@@ -29,7 +29,7 @@ export const Skills = () => {
                 </motion.div>
 
                 <Skill name={<i class="fa-brands fa-html5" style={{color: '#ff0000', cursor: 'pointer'}}></i>} x="-20vw" y="2vw" />
-                <Skill name={<i className='fa-brands fa-css3-alt' style={{color: '#006eff', cursor: 'pointer'}}></i>} x="-5vw" y="-10vw" />
+                <Skill name={<i className='fa-brands fa-css3-alt' style={{color: '#006eff', cursor: 'pointer'}}></i>} x="-10vw" y="-12vw" />
                 <Skill name={<i class="fa-brands fa-square-js" style={{color: '#fff700', cursor: 'pointer'}}></i>} x="20vw" y="6vw" />
                 <Skill name={<i class="fa-brands fa-react" style={{color: '#00fbef', cursor: 'pointer'}}></i>} x="0vw" y="12vw" />
                 <Skill name={<i class="fa-brands fa-github" style={{color: 'var(--text-color)', cursor: 'pointer'}}></i>} x="10vw" y="-15vw" />

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const NavMenu = ({toggleMenu, isOpen}) => {
   return (
     <div className='d-flex justify-content-center p-5'>  
-        <ul className="list-unstyled listAni">
+        <ul className="list-unstyled">
                             <li>
                                 <Link to="/" style={{textDecoration: 'none', color: 'white'}} onClick={()=> toggleMenu(isOpen)}>Home</Link>
                             </li>
@@ -12,7 +12,7 @@ export const NavMenu = ({toggleMenu, isOpen}) => {
                             <Link to="/about" style={{textDecoration: 'none', color: 'white'}} onClick={()=> toggleMenu(isOpen)}>About</Link>
                             </li>
                             <li>
-                                Projects
+                            <Link to="/project" style={{textDecoration: 'none', color: 'white'}} onClick={()=> toggleMenu(isOpen)}>Projects</Link>   
                             </li>
                             <li>
                                 Contact

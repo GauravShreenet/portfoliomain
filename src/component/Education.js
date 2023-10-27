@@ -36,7 +36,7 @@ export const Education = () => {
         }
     )
     return (
-        <div className="container mt-5">
+        <div className="container my-5" style={{paddingBottom: '15rem'}}>
             <div className="row">
                 <div className="col text-center">
                     <h1 className='fw-bolder'>Education</h1>

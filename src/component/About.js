@@ -34,7 +34,7 @@ export const About = () => {
   return (
     <>
       <title>GauravShreenet | About</title>
-      <div className="container">
+      <div className="container pb-5">
         <div className="text-center" style={{ fontSize: '4rem', fontWeight: 'bold', fontFamily: 'Abril Fatface, serif' }}>
           Journey in Web Development
         </div>
