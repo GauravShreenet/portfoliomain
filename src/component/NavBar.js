@@ -20,9 +20,9 @@ export const NavBar = () => {
     }
 
     return (
-        <div className=" m-2 p-5 position-fixed" style={{top: '1%', width: '100%'}}>
-            <div className="row">
-                <div className="col">
+        <div className=" m-2 p-5 position-fixed z-3" style={{top: '1%', width: '100%'}}>
+            <div className="row z-3">
+                <div className="col z-3">
                     <div>
                         <img src={logo} alt="" style={{height: '10vh', width: '15vh'}}/>
                     </div>

@@ -4,17 +4,20 @@ import { motion, useScroll, useTransform } from "framer-motion"
 
 export const Home = () => {
     const targetRef = useRef(null);
+    // const targetRef2 = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
         offset: ["end end", "end start"],
     });
-    
+
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-    const opacity1 = useTransform(scrollYProgress, [1, 0.5], [0, 1]);
-    
+    // const opacity1 = useTransform(scrollYProgress, [1, 0.5], [0, 1]);
+    const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
+    const position = useTransform(scrollYProgress, (pos) => pos === 1 ? "relative" : "fixed")
+
     return (
         <div className="container-md position-relative" id='home'>
-            <motion.div ref={targetRef} className="row position-fixed" style={{opacity, top: '10%'}}>
+            <motion.div ref={targetRef} className="row position-fixed" style={{ opacity, scale, top: '10%'}}>
                 <div className="col-md d-flex align-items-center">
                     <div className='m-5'>
                         Hi I'm <span className='fs-1 fw-bold'>Gaurav Shreenet</span><br />
@@ -30,14 +33,18 @@ export const Home = () => {
                 </div>
             </motion.div>
 
-            <div className="row">
-                <motion.div  ref={targetRef} className="col-md text-center" style={{opacity1, fontSize: '3rem', fontWeight: 'bold', fontFamily: 'Roboto, sans-serif', marginTop: '100vh' }}>
-                    Transforming ideas into interactive web experiences.
-                </motion.div>
+            <div style={{ marginTop: '100vh' }}>
+                <div style={{ height: '150vh', width: '100%' }}>
+                    <div style={{ position: 'sticky', top: '40vh' }}>
+                        <div className="text-center" style={{ fontSize: '3rem', fontWeight: 'bold', fontFamily: 'Roboto, sans-serif' }}>
+                            Transforming ideas into interactive web experiences.
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className="row mt-5">
-                <div className="col d-flex justify-content-center" style={{marginTop: '100vh'}}>
+                <div className="col d-flex justify-content-center" style={{ marginTop: '100vh' }}>
                     <div>
                         <div className='contact'>
                             GET IN
@@ -48,7 +55,8 @@ export const Home = () => {
                     </div>
 
                 </div>
-                <form className='d-flex justify-content-center my-5 py-5'>
+                <div className="z-2">
+                    <form className='d-flex justify-content-center' style={{marginTop: '25vh'}}>
                     <div className='w-75'>
                         <div className="mb-3 mt-5">
                             <input type="text" className='form-control fs-3 bg-transparent text-white rounded-bottom-0' placeholder='Your Name' id='name' />
@@ -60,17 +68,16 @@ export const Home = () => {
                             <input type="text" className='form-control fs-3 bg-transparent text-white rounded-bottom-0' placeholder='Subject' id='subject' />
                         </div>
                         <div className="mb-3">
-                            <textarea className="form-control fs-3 bg-transparent text-white rounded-bottom-0" id="textarea" rows="6" placeholder='Your Message' style={{resize: 'none'}}></textarea>
+                            <textarea className="form-control fs-3 bg-transparent text-white rounded-bottom-0" id="textarea" rows="4" placeholder='Your Message' style={{ resize: 'none' }}></textarea>
                         </div>
                         <div className='d-flex justify-content-end'>
-                            <button type="submit" className="btn btn-primary fw-bold">Send Message <i className="fa-solid fa-paper-plane"></i></button>
+                            <button type="submit" className="btn btn-primary fw-bold mt-5">Send Message <i className="fa-solid fa-paper-plane"></i></button>
                         </div>
                     </div>
-
                 </form>
-
+                </div>
+                
             </div>
-
         </div>
     )
 }
