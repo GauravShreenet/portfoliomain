@@ -116,3 +116,12 @@ body {
     height: 102%;
     background: var(--text-color);
 }
+
+.hover-effect {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.hover-effect:hover {
+    transform: translateX(10px);
+}

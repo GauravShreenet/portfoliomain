@@ -43,7 +43,7 @@ export const Home = () => {
                 </div>
             </div>
 
-            <div className="row mt-5">
+            <div className="row mt-5" id="contact">
                 <div className="col d-flex justify-content-center" style={{ marginTop: '100vh' }}>
                     <div>
                         <div className='contact'>

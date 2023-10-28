@@ -59,29 +59,39 @@ export const Project = () => {
             />
           ))}
         </div>
-        
+
         <div className="row d-flex justify-content-between" style={{ marginBottom: '10vh' }}>
           {projectSmall.map((item, i) => (
-            <SmallCard 
+            <SmallCard
               key={i}
               projectImage={item.image}
               title={item.title}
               linkGit={item.linkGit}
               linkPage={item.linkPage}
             />
-          ))}  
-            
+          ))}
+
         </div>
 
-        <div className="fs-6 text-uppercase" style={{ marginTop: '30vh' }}>
-          there's more
+        <div style={{ marginBottom: '20vh' }}>
+          <div className="fs-6 text-uppercase" style={{ marginTop: '30vh' }}>
+            there's more
+          </div>
+          <h3 className='mt-3 fw-bold'>GitHub Projects</h3>
+          <p className='text-white-50'>These projects can be fond in my GitHub repository, a testament to my ongoing journey of improvement.</p>
+          <ol>
+            <li className='mt-5'><a href="https://github.com/GauravShreenet/react_apipractice" target='_blank' className='text-light fs-4'><span className='text-decoration-underline' style={{
+              display: 'inline-block',
+              transition: 'transform 0.2s ease'}}
+              onMouseOver={(e) => (e.currentTarget.style.transform = 'translateX(10px)')}
+              onMouseOut={(e) => (e.currentTarget.style.transform = 'translateX(0)')}>Marvel Api</span></a></li>
+            <li className='mt-5'><a href="https://github.com/GauravShreenet/RandomUserApiCall" target='_blank' className='text-light fs-4'><span className='text-decoration-underline hover-effect'>Random User</span></a></li>
+            <li className='mt-5'><a href="https://github.com/GauravShreenet/React_NTDL" target='_blank' className='text-light fs-4'><span className='text-decoration-underline hover-effect'>Not To Do List</span></a></li>
+            <li className='mt-5'><a href="https://github.com/GauravShreenet/Notetaking" target='_blank' className='text-light fs-4'><span className='text-decoration-underline hover-effect'>To Do List</span></a></li>
+            <li className='mt-5'><a href="https://github.com/GauravShreenet/paralaxpractice" target='_blank' className='text-light fs-4'><span className='text-decoration-underline hover-effect'>Parallax Basic</span></a></li>
+          </ol>
         </div>
-        <h3 className='mt-3 fw-bold'>GitHub Projects</h3>
-        <p>These projects can be fond in my GitHub repository, a testament to my ongoing journey of improvement.</p>
-            
       </div>
-
-
     </>
   )
 }
