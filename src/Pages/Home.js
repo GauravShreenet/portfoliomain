@@ -13,7 +13,7 @@ export const Home = () => {
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
     // const opacity1 = useTransform(scrollYProgress, [1, 0.5], [0, 1]);
     const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
-    const position = useTransform(scrollYProgress, (pos) => pos === 1 ? "relative" : "fixed")
+    // const position = useTransform(scrollYProgress, (pos) => pos === 1 ? "relative" : "fixed")
 
     return (
         <div className="container-md position-relative" id='home'>

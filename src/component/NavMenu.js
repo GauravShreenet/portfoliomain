@@ -15,7 +15,7 @@ export const NavMenu = ({toggleMenu, isOpen}) => {
                             <Link to="/project" style={{textDecoration: 'none', color: 'white'}} onClick={()=> toggleMenu(isOpen)}>Projects</Link>   
                             </li>
                             <li>
-                                Contact
+                            <Link to="/contact" style={{textDecoration: 'none', color: 'white'}} onClick={()=> toggleMenu(isOpen)}>Contact</Link>
                             </li>
                         </ul>
     </div>

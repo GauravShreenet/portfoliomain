@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from 'react'
-import { Experience } from './Experience'
-import { Education } from './Education'
+import { Experience } from '../component/Experience'
+import { Education } from '../component/Education'
 import image from "../asset/aboutPic.jpg"
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
-import { toHaveTextContent } from '@testing-library/jest-dom/matchers'
-import { Skills } from './Skills'
+import { Skills } from '../component/Skills'
 
 const AnimatedNum = ({value}) => {
   const ref = useRef(null)
@@ -35,7 +34,7 @@ export const About = () => {
     <>
       <title>GauravShreenet | About</title>
       <div className="container pb-5">
-        <div className="text-center" style={{ fontSize: '4rem', fontWeight: 'bold', fontFamily: 'Abril Fatface, serif' }}>
+        <div className="text-center" style={{ fontSize: '4rem', fontWeight: 'bold', fontFamily: 'Abril Fatface, serif', marginTop: '20vh' }}>
           Journey in Web Development
         </div>
         <div className="row my-5">
