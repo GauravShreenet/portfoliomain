@@ -1,6 +1,9 @@
 import React from 'react'
 import { Card } from '../component/Card'
 import imageMovie from '../asset/movieapi.PNG'
+import imageSuper from '../asset/SuperApi.PNG'
+import imageRpc from '../asset/RockPaperScissor.PNG'
+import imagePrank from '../asset/prankCal.PNG'
 import { SmallCard } from '../component/SmallCard'
 
 export const Project = () => {
@@ -14,26 +17,26 @@ export const Project = () => {
       linkPage: "https://movie-api-taupe.vercel.app/"
     },
     {
-      image: imageMovie,
-      title: "Move API",
-      descrip: "Discover and save your favorite movies with ease. Search for movies and organize your selections in a way that suits your preference.",
-      linkGit: "https://github.com/GauravShreenet/MovieApi",
-      linkPage: "https://movie-api-taupe.vercel.app/"
+      image: imageSuper,
+      title: "SuperHuman API",
+      descrip: "Discover and get the details of comic characters with ease. Search for heroes and villains to know their stats.",
+      linkGit: "https://github.com/GauravShreenet/superhuman",
+      linkPage: "https://superhuman.vercel.app/"
     },
   ]
 
   const projectSmall = [
     {
-      image: imageMovie,
-      title: "Move API",
-      linkGit: "https://github.com/GauravShreenet/MovieApi",
-      linkPage: "https://movie-api-taupe.vercel.app/"
+      image: imageRpc,
+      title: "Rock Paper Scissors",
+      linkGit: "https://github.com/GauravShreenet/RockPaperScissors",
+      linkPage: "https://gauravshreenet.github.io/RockPaperScissors/"
     },
     {
-      image: imageMovie,
-      title: "Move API",
-      linkGit: "https://github.com/GauravShreenet/MovieApi",
-      linkPage: "https://movie-api-taupe.vercel.app/"
+      image: imagePrank,
+      title: "Prank Calculator",
+      linkGit: "https://github.com/GauravShreenet/prankCalculator",
+      linkPage: "https://gauravshreenet.github.io/prankCalculator/"
     },
   ]
 
@@ -70,26 +73,10 @@ export const Project = () => {
             
         </div>
 
-        {/* <div className="col mb-5 boxShad ms-5 rounded-4 d-flex justify-content-center align-items-center" style={{ marginTop: '10vh', width: '100%' }}>
-            <div className='boxCon rounded-5' style={{ right: '-2%', width: '101.5%' }} />
-            <div className="imageAbout d-flex justify-content-center align-items-center">
-
-            </div>
-          </div>
-          <div className="row" style={{ marginBottom: '10vh' }}>
-            <div className="col mb-5 boxShad ms-5 rounded-4 d-flex justify-content-center align-items-center" style={{ marginTop: '10vh' }}>
-              <div className='boxCon rounded-5' style={{ right: '-2%', width: '101.5%' }} />
-              <div className="imageAbout d-flex justify-content-center align-items-center">
-
-              </div>
-            </div>
-            <div className="col mb-5 boxShad ms-5 rounded-4 d-flex justify-content-center align-items-center" style={{ marginTop: '10vh' }}>
-              <div className='boxCon rounded-5' style={{ right: '-2%', width: '101.5%' }} />
-              <div className="imageAbout d-flex justify-content-center align-items-center">
-
-              </div>
-            </div>
-          </div> */}
+        <div className="fs-6 text-uppercase" style={{ marginTop: '30vh' }}>
+          there's more
+        </div>
+        <h3 className='mt-3 fw-bold'>GitHub Projects</h3>
 
       </div>
 
