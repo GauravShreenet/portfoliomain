@@ -1,4 +1,5 @@
 import React from 'react'
+import { Card } from '../component/Card'
 
 export const Project = () => {
   return (
@@ -9,13 +10,8 @@ export const Project = () => {
           Building the future, one line of code at a time.
         </div>
         <div>
-          <div className="col mt-5 mb-5 boxShad ms-5 rounded-4 d-flex justify-content-center align-items-center">
-            <div className='boxCon rounded-5' style={{ right: '-2%', width: '101.5%' }} />
-            <div className="imageAbout d-flex justify-content-center align-items-center">
-
-            </div>
-          </div>
-          <div className="col mb-5 boxShad ms-5 rounded-4 d-flex justify-content-center align-items-center" style={{ marginTop: '10vh' }}>
+          <Card />
+          <div className="col mb-5 boxShad ms-5 rounded-4 d-flex justify-content-center align-items-center" style={{ marginTop: '10vh', width: '100%' }}>
             <div className='boxCon rounded-5' style={{ right: '-2%', width: '101.5%' }} />
             <div className="imageAbout d-flex justify-content-center align-items-center">
 
