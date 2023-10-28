@@ -1,16 +1,15 @@
 import React from 'react'
-import imageMovie from '../asset/movieapi.PNG'
 
 export const Card = ({ projectImage, title, descrip, linkGit, linkPage }) => {
     return (
         <>
-            <div className="col mt-5 mb-5 boxShad ms-5 rounded-4" style={{ marginTop: '10vh', width: '100%', padding: '4rem'}}>
+            <div className="mt-5 mb-5 boxShad ms-5 rounded-4" style={{ marginTop: '10vh', width: '100%', padding: '4rem'}}>
                 <div className='boxCon rounded-5' style={{ right: '-1.5%', width: '101.5%' }} />
                 <div className="row">
-                    <div className="col-7">
+                    <div className="col-md-7">
                         <img src={projectImage} alt="" className='card-img-top rounded-3' style={{height: '25vw'}}/>
                     </div>
-                    <div className="col-5 d-flex flex-column justify-content-center ">
+                    <div className="col-md-5 d-flex flex-column justify-content-center mt-5">
                         <h3 className="card-title fw-bold fs-1">{title}</h3>
                         <p className="card-text mt-4 fs-4">{descrip}</p>
                         <div className='d-flex mt-4 fs-1'>
