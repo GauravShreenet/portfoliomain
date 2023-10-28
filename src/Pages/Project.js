@@ -60,7 +60,7 @@ export const Project = () => {
           ))}
         </div>
         
-        <div className="row" style={{ marginBottom: '10vh' }}>
+        <div className="row d-flex justify-content-between" style={{ marginBottom: '10vh' }}>
           {projectSmall.map((item, i) => (
             <SmallCard 
               key={i}
@@ -77,7 +77,8 @@ export const Project = () => {
           there's more
         </div>
         <h3 className='mt-3 fw-bold'>GitHub Projects</h3>
-
+        <p>These projects can be fond in my GitHub repository, a testament to my ongoing journey of improvement.</p>
+            
       </div>
 
 
