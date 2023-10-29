@@ -1,4 +1,5 @@
 import React from 'react'
+import { RevealAni } from './RevealAni'
 
 export const SmallCard = ({ projectImage, title, linkGit, linkPage }) => {
     return (
@@ -11,7 +12,7 @@ export const SmallCard = ({ projectImage, title, linkGit, linkPage }) => {
                         onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')} /></a>
                 </div>
                 <div className="col d-flex flex-column justify-content-center mt-5">
-                    <h3 className="card-title fw-bold fs-1">{title}</h3>
+                    <h3 className="card-title fw-bold fs-1"><RevealAni>{title}</RevealAni></h3>
                     <div className='d-flex justify-content-between fs-1 mt-3'>
                         <a href={linkGit} target='_blank' className='me-4'><i className="fa-brands fa-github"></i></a>
                         <a href={linkPage} target='_blank'><i className="fa-regular fa-window-maximize"></i></a>

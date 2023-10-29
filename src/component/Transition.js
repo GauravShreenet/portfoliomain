@@ -22,7 +22,6 @@ export const Transition = () => {
                 exit={{ scaleY: 0 }}
                 transition={{delay: 0.4, duration: 0.5, ease: "easeInOut" }}
             />      
-
         </>
     )
 }

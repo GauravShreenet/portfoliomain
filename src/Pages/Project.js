@@ -6,6 +6,7 @@ import imageRpc from '../asset/RockPaperScissor.PNG'
 import imagePrank from '../asset/prankCal.PNG'
 import { SmallCard } from '../component/SmallCard'
 import { Transition } from '../component/Transition'
+import { RevealAni } from '../component/RevealAni'
 
 export const Project = () => {
 
@@ -47,7 +48,7 @@ export const Project = () => {
       <title>GauravShreenet | Project</title>
       <div className="container">
         <div className="text-center" style={{ fontSize: '4rem', fontWeight: 'bold', fontFamily: 'Abril Fatface, serif', marginTop: '20vh' }}>
-          Building the future, one line of code at a time.
+          <RevealAni>Building the future, one line of code at a time.</RevealAni>
         </div>
         <div>
           {projectBig.map((card, i) => (
@@ -77,10 +78,10 @@ export const Project = () => {
 
         <div style={{ marginBottom: '20vh' }}>
           <div className="fs-6 text-uppercase" style={{ marginTop: '30vh' }}>
-            there's more
+          <RevealAni>there's more</RevealAni>
           </div>
-          <h3 className='mt-3 fw-bold'>GitHub Projects</h3>
-          <p className='text-white-50'>These projects can be fond in my GitHub repository, a testament to my ongoing journey of improvement.</p>
+          <h3 className='mt-3 fw-bold'><RevealAni>GitHub Projects</RevealAni></h3>
+          <p className='text-white-50'><RevealAni>These projects can be fond in my GitHub repository, a testament to my ongoing journey of improvement.</RevealAni></p>
           <ol>
             <li className='mt-5'><a href="https://github.com/GauravShreenet/react_apipractice" target='_blank' className='text-light fs-4'><span className='text-decoration-underline' style={{
               display: 'inline-block',

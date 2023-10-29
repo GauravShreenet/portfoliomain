@@ -1,4 +1,5 @@
 import React from 'react'
+import { RevealAni } from './RevealAni'
 
 export const Card = ({ projectImage, title, descrip, linkGit, linkPage }) => {
     return (
@@ -14,8 +15,8 @@ export const Card = ({ projectImage, title, descrip, linkGit, linkPage }) => {
                         /></a>
                     </div>
                     <div className="col-md-5 ms-5 d-flex flex-column justify-content-center mt-5">
-                        <h3 className="card-title fw-bold fs-1">{title}</h3>
-                        <p className="card-text mt-4 fs-4">{descrip}</p>
+                        <h3 className="card-title fw-bold fs-1"><RevealAni>{title}</RevealAni></h3>
+                        <p className="card-text mt-4 fs-4"><RevealAni>{descrip}</RevealAni></p>
                         <div className='d-flex mt-4 fs-1'>
                             <a href={linkGit} target='_blank' className='me-4'><i className="fa-brands fa-github"></i></a>
                             <a href={linkPage} target='_blank'><i className="fa-regular fa-window-maximize"></i></a>

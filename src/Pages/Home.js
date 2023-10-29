@@ -2,6 +2,7 @@ import { useRef } from "react"
 import imagePortfolio from "../asset/1.png"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { Transition } from "../component/Transition";
+import { RevealAni } from "../component/RevealAni";
 
 export const Home = () => {
     const targetRef = useRef(null);
@@ -22,9 +23,9 @@ export const Home = () => {
                 <motion.div ref={targetRef} className="row position-fixed" style={{ opacity, scale, top: '10%' }}>
                     <div className="col-md d-flex align-items-center">
                         <div className='m-5'>
-                            Hi I'm <span className='fs-1 fw-bold'>Gaurav Shreenet</span><br />
-                            <span className="tag">Jr. Front-End Dev.</span><br /><br />
-                            <span className='mt-5'>React is my canvas; code is my art. I bring ideas to life, crafting inspiring user interfaces.</span><br /><br /> <br />
+                            <div className="d-flex align-items-center"><RevealAni>Hi I'm</RevealAni><RevealAni><span className='fs-1 ms-2 fw-bold'>Gaurav Shreenet</span></RevealAni></div><br />
+                            <RevealAni><span className="tag">Jr. Front-End Dev.</span></RevealAni><br /><br />
+                            <RevealAni><span className='mt-5'>React is my canvas; code is my art. I bring ideas to life, crafting inspiring user interfaces.</span></RevealAni><br /><br /> <br />
                             <button className='btn btn-primary fw-bold'>Download CV <i class="fa-solid fa-download"></i></button>
                         </div>
                     </div>

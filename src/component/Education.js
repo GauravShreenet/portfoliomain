@@ -1,6 +1,7 @@
 import { motion ,useScroll } from 'framer-motion'
 import React, { useRef } from 'react'
 import { LiIcon } from './LiIcon'
+import { RevealAni } from './RevealAni'
 
 const Details = ({ type, time, place, info }) => {
     const ref = useRef(null)
@@ -39,7 +40,7 @@ export const Education = () => {
         <div className="container my-5" style={{paddingBottom: '15rem'}}>
             <div className="row">
                 <div className="col text-center">
-                    <h1 className='fw-bolder'>Education</h1>
+                    <h1 className='fw-bolder'><RevealAni>Education</RevealAni></h1>
                 </div>
             </div>
             <div ref={ref} className='row mt-5 position-relative'>

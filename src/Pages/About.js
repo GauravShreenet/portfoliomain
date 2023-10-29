@@ -5,6 +5,7 @@ import image from "../asset/aboutPic.jpg"
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import { Skills } from '../component/Skills'
 import { Transition } from '../component/Transition'
+import { RevealAni } from '../component/RevealAni'
 
 const AnimatedNum = ({value}) => {
   const ref = useRef(null)
@@ -37,25 +38,25 @@ export const About = () => {
       <title>GauravShreenet | About</title>
       <div className="container pb-5">
         <div className="text-center" style={{ fontSize: '4rem', fontWeight: 'bold', fontFamily: 'Abril Fatface, serif', marginTop: '20vh' }}>
-          Journey in Web Development
+          <RevealAni>Journey in Web Development</RevealAni>
         </div>
         <div className="row my-5">
           <div className="col-4">
-            <h4 className='text-uppercase fw-bold'>biography</h4>
-            <p className='mt-3'>
+          <RevealAni><h4 className='text-uppercase fw-bold'>biography</h4></RevealAni>
+          <RevealAni><p className='mt-3'>
               I'm Gaurav Shreenet, a web developer passionate about technology. My journey began in college when I discovered the excitement of creating captivating websites.
-            </p>
-            <p>
+            </p></RevealAni>
+            <RevealAni><p>
               With a Bachelor's degree in Information Technology, focusing on Web and Mobile Application Development, I gained a strong foundation in web development, mastering HTML, CSS, JavaScript, and React.
               I'm committed to continuous learning in the ever-evolving tech world, staying up-to-date with the latest trends.
-            </p>
-            <p>
+            </p></RevealAni>
+            <RevealAni><p>
               My experience includes diverse projects, from beautiful websites to dynamic web applications, enhancing my problem-solving skills.
               Collaboration is essential to my work; I value teamwork and diverse perspectives that create outstanding digital experiences.
-            </p>
-            <p>
+            </p></RevealAni>
+            <RevealAni><p>
               I'm eager to connect with tech enthusiasts and potential collaborators to explore the limitless possibilities of web development.
-            </p>
+            </p></RevealAni>
           </div>
           <div className="col-4 mb-5 boxShad ms-5 rounded-4 d-flex justify-content-center align-items-center">
             <div className='boxCon rounded-5' />
@@ -65,24 +66,24 @@ export const About = () => {
           </div>
           <div className="col d-flex flex-column align-items-end justify-content-between">
             <div className='d-flex flex-column align-items-end justify-content-center'>
-              <span className='fs-1 fw-bold'>
+            <RevealAni><span className='fs-1 fw-bold'>
                 IT
-              </span>
-              <h3>Graduate</h3>
+              </span></RevealAni>
+              <RevealAni><h3>Graduate</h3></RevealAni>
             </div>
 
             <div className='d-flex flex-column align-items-end justify-content-center'>
               <span className='fs-1 fw-bold'>
                 <AnimatedNum value={10} />+
               </span>
-              <h3>Projects</h3>
+              <RevealAni><h3>Projects</h3></RevealAni>
             </div>
 
             <div className='d-flex flex-column align-items-end justify-content-center'>
               <span className='fs-1 fw-bold'>
                 <AnimatedNum value={2} />
               </span>
-              <h3>Years</h3>
+              <RevealAni><h3>Years</h3></RevealAni>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { RevealAni } from './RevealAni'
 
 const Skill = ({ name, x, y }) => {
     return (
@@ -20,7 +21,7 @@ const Skill = ({ name, x, y }) => {
 export const Skills = () => {
     return (
         <>
-            <h1 className='fw-bold mt-5 text-center'>Skills</h1>
+            <h1 className='fw-bold mt-5 text-center'><RevealAni> Skills</RevealAni></h1>
             <div className='position-relative d-flex align-items-center justify-content-center vh-100'>
                 <motion.div className='d-flex align-items-center justify-content-center'
                     style={{ cursor: 'pointer', fontSize: '7rem' }}
