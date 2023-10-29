@@ -1,8 +1,10 @@
 import React from 'react'
+import { Transition } from '../component/Transition'
 
 export const Contact = () => {
     return (
         <>
+            <Transition />
             <div className="container z-2" style={{ marginTop: '30vh' }}>
                 <h3 className='fs-1' style={{ fontFamily: 'Abril Fatface, serif', marginTop: '20vh' }}>Have something in mind? Say hello! Whether it's a question, feedback, or an opportunity, I'm just an email away.</h3>
                 <form className='d-flex justify-content-center' style={{ marginTop: '15vh' }}>

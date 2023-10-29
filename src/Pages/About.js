@@ -4,6 +4,7 @@ import { Education } from '../component/Education'
 import image from "../asset/aboutPic.jpg"
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import { Skills } from '../component/Skills'
+import { Transition } from '../component/Transition'
 
 const AnimatedNum = ({value}) => {
   const ref = useRef(null)
@@ -32,6 +33,7 @@ const AnimatedNum = ({value}) => {
 export const About = () => {
   return (
     <>
+      <Transition />
       <title>GauravShreenet | About</title>
       <div className="container pb-5">
         <div className="text-center" style={{ fontSize: '4rem', fontWeight: 'bold', fontFamily: 'Abril Fatface, serif', marginTop: '20vh' }}>
