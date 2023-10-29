@@ -5,6 +5,7 @@ import imageSuper from '../asset/SuperApi.PNG'
 import imageRpc from '../asset/RockPaperScissor.PNG'
 import imagePrank from '../asset/prankCal.PNG'
 import { SmallCard } from '../component/SmallCard'
+import { Transition } from '../component/Transition'
 
 export const Project = () => {
 
@@ -42,6 +43,7 @@ export const Project = () => {
 
   return (
     <>
+      <Transition />
       <title>GauravShreenet | Project</title>
       <div className="container">
         <div className="text-center" style={{ fontSize: '4rem', fontWeight: 'bold', fontFamily: 'Abril Fatface, serif', marginTop: '20vh' }}>

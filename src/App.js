@@ -6,11 +6,13 @@ import { About } from './Pages/About';
 import { Footer } from './component/Footer';
 import { Project } from './Pages/Project';
 import { Contact } from './Pages/Contact';
+import { Transition } from './component/Transition';
 
 function App() {
   return (
     <>
       <div className="wrapper position-relative">
+        <Transition />
         <NavBar />
         <Routes>
           <Route path='/' element={ <Home /> } />
