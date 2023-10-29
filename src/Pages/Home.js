@@ -13,7 +13,6 @@ export const Home = () => {
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
     // const opacity1 = useTransform(scrollYProgress, [1, 0.5], [0, 1]);
     const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
-    // const position = useTransform(scrollYProgress, (pos) => pos === 1 ? "relative" : "fixed")
 
     return (
         <div className="container-md position-relative" id='home'>
@@ -33,19 +32,13 @@ export const Home = () => {
                 </div>
             </motion.div>
 
-            <div style={{ marginTop: '100vh' }}>
+            <div style={{ marginTop: '100vh', background: 'green' }}>
                 <div style={{ height: '150vh', width: '100%' }}>
-                    <div style={{ position: 'sticky', top: '40vh' }}>
-                        <div className="text-center" style={{ fontSize: '3rem', fontWeight: 'bold', fontFamily: 'Roboto, sans-serif' }}>
+                    <div className="overflow-hidden" style={{ position: 'sticky', top: '40vh' }}>
+                        <div className="text-center bg-success" style={{ fontSize: '3rem', fontWeight: 'bold', fontFamily: 'Roboto, sans-serif' }}>
                             Transforming ideas into interactive web experiences.
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="row mt-5" id="contact">
-                <div className="col d-flex justify-content-center" style={{ marginTop: '100vh' }}>
-                    <div>
+                        <div>
                         <div className='contact'>
                             GET IN
                         </div>
@@ -53,6 +46,13 @@ export const Home = () => {
                             TOUCH
                         </div>
                     </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="row mt-5" id="contact">
+                <div className="col d-flex justify-content-center" style={{ marginTop: '100vh' }}>
+                    
 
                 </div>
                 <div className="z-2">
