@@ -57,6 +57,8 @@ body {
 .contact {
     font-size: 12vw;
     font-family: 'Abril Fatface', serif;
+    display: flex;
+    justify-content: center;
 }
 
 .form-control {
@@ -150,3 +152,5 @@ body {
   .hover-slide:hover::before {
     transform: translateX(0);
   }
+
+  
