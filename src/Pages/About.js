@@ -40,7 +40,7 @@ export const About = () => {
           <RevealAni>Journey in Web Development</RevealAni>
         </div>
         <div className="row my-5">
-          <div className="col-md-4 col-12 mb-3 mb-md-0">
+          <div className="col-md">
             <RevealAni><h4 className='text-uppercase fw-bold'>biography</h4></RevealAni>
             <RevealAni><p className='mt-3'>
               I'm Gaurav Shreenet, a web developer passionate about technology. My journey began in college when I discovered the excitement of creating captivating websites.
@@ -57,28 +57,30 @@ export const About = () => {
               I'm eager to connect with tech enthusiasts and potential collaborators to explore the limitless possibilities of web development.
             </p></RevealAni>
           </div>
-          <div className="col-md-4 col-12 mb-3 mb-md-0 boxShad rounded-4 d-flex justify-content-center align-items-center">
-            <div className='boxCon rounded-5' />
-            <div className="imageAbout d-flex justify-content-center align-items-center">
-              <img src={image} alt="Gaurav" className='rounded-4' />
+          <div className='col-md d-flex justify-content-center align-items-center'>
+            <div className="mb-5 boxShad rounded-4 d-flex justify-content-center align-items-center">
+              <div className='boxCon rounded-5' />
+              <div className="imageAbout d-flex justify-content-center align-items-center">
+                <img src={image} alt="Gaurav" className='rounded-4' />
+              </div>
             </div>
           </div>
-          <div className="col-md col-12 d-flex flex-column align-items-end justify-content-between">
-            <div className='d-flex flex-column align-items-end justify-content-center'>
+          <div className="col-md d-flex flex-lg-column align-items-end justify-content-between">
+            <div className='d-flex my-3 flex-column align-items-end justify-content-center'>
               <RevealAni><span className='fs-1 fw-bold'>
                 IT
               </span></RevealAni>
               <RevealAni><h3>Graduate</h3></RevealAni>
             </div>
 
-            <div className='d-flex flex-column align-items-end justify-content-center'>
+            <div className='d-flex my-3 flex-column align-items-end justify-content-center'>
               <span className='fs-1 fw-bold'>
                 <AnimatedNum value={10} />+
               </span>
               <RevealAni><h3>Projects</h3></RevealAni>
             </div>
 
-            <div className='d-flex flex-column align-items-end justify-content-center'>
+            <div className='d-flex my-3 flex-column align-items-end justify-content-center'>
               <span className='fs-1 fw-bold'>
                 <AnimatedNum value={2} />
               </span>

@@ -45,7 +45,7 @@ export const Experience = () => {
                 </div>
             </div>
             <div ref={ref} className='row mt-5 position-relative'>
-                <div className='col-1 d-flex justify-content-center'>
+                <div className='col d-flex justify-content-center'>
                 
                     <motion.div 
                     className='position-absolute top-0 bottom-0' style={{width: '4px', background: 'var(--text-color)', scaleY: scrollYProgress, transformOrigin: 'top'}} />
