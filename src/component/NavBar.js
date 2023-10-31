@@ -20,7 +20,7 @@ export const NavBar = () => {
     }
 
     return (
-        <div className=" m-2 p-5 position-fixed z-3" style={{top: '1%', width: '100%'}}>
+        <div className=" m-2 p-3 position-fixed z-3" style={{top: '1%', width: '100%'}}>
             <div className="row z-3">
                 <div className="col z-3">
                     <div>
@@ -28,7 +28,7 @@ export const NavBar = () => {
                     </div>
                     
                 </div>
-                <div className="col d-flex justify-content-end">
+                <div className="col d-flex justify-content-end me-4">
                     <Hamburger color='rgb(255 255 255)' toggled={isOpen} size="40" rounded toggle={toggleMenu} />
                 </div>
             </div>

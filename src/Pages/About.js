@@ -7,7 +7,7 @@ import { Skills } from '../component/Skills'
 import { Transition } from '../component/Transition'
 import { RevealAni } from '../component/RevealAni'
 
-const AnimatedNum = ({value}) => {
+const AnimatedNum = ({ value }) => {
   const ref = useRef(null)
 
   const motionValue = useMotionValue(0)
@@ -15,14 +15,14 @@ const AnimatedNum = ({value}) => {
   const isInView = useInView(ref)
 
   useEffect(() => {
-    if(isInView){
+    if (isInView) {
       motionValue.set(value);
     }
   }, [isInView, value, motionValue])
 
-  useEffect(()=>{
+  useEffect(() => {
     springValue.on("change", (latest) => {
-      if(ref.current && latest.toFixed(0) <= value){
+      if (ref.current && latest.toFixed(0) <= value) {
         ref.current.textContent = latest.toFixed(0);
       }
     })
@@ -35,15 +35,14 @@ export const About = () => {
   return (
     <>
       <Transition />
-      <title>GauravShreenet | About</title>
       <div className="container pb-5">
         <div className="text-center" style={{ fontSize: '4rem', fontWeight: 'bold', fontFamily: 'Abril Fatface, serif', marginTop: '20vh' }}>
           <RevealAni>Journey in Web Development</RevealAni>
         </div>
         <div className="row my-5">
-          <div className="col-md-4">
-          <RevealAni><h4 className='text-uppercase fw-bold'>biography</h4></RevealAni>
-          <RevealAni><p className='mt-3'>
+          <div className="col-md-4 col-12 mb-3 mb-md-0">
+            <RevealAni><h4 className='text-uppercase fw-bold'>biography</h4></RevealAni>
+            <RevealAni><p className='mt-3'>
               I'm Gaurav Shreenet, a web developer passionate about technology. My journey began in college when I discovered the excitement of creating captivating websites.
             </p></RevealAni>
             <RevealAni><p>
@@ -58,15 +57,15 @@ export const About = () => {
               I'm eager to connect with tech enthusiasts and potential collaborators to explore the limitless possibilities of web development.
             </p></RevealAni>
           </div>
-          <div className="col-md-4 mb-5 boxShad ms-5 rounded-4 d-flex justify-content-center align-items-center">
+          <div className="col-md-4 col-12 mb-3 mb-md-0 boxShad rounded-4 d-flex justify-content-center align-items-center">
             <div className='boxCon rounded-5' />
             <div className="imageAbout d-flex justify-content-center align-items-center">
               <img src={image} alt="Gaurav" className='rounded-4' />
             </div>
           </div>
-          <div className="col-md d-flex flex-column align-items-end justify-content-between">
+          <div className="col-md col-12 d-flex flex-column align-items-end justify-content-between">
             <div className='d-flex flex-column align-items-end justify-content-center'>
-            <RevealAni><span className='fs-1 fw-bold'>
+              <RevealAni><span className='fs-1 fw-bold'>
                 IT
               </span></RevealAni>
               <RevealAni><h3>Graduate</h3></RevealAni>
@@ -87,10 +86,11 @@ export const About = () => {
             </div>
           </div>
         </div>
+        <Skills />
+        <Experience />
+        <Education />
       </div>
-      <Skills />
-      <Experience />
-      <Education />
+
 
     </>
 
