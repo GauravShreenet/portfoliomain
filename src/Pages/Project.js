@@ -50,7 +50,7 @@ export const Project = () => {
         <div className="text-center" style={{ fontSize: '4rem', fontWeight: 'bold', fontFamily: 'Abril Fatface, serif', marginTop: '20vh' }}>
           <RevealAni>Building the future, one line of code at a time.</RevealAni>
         </div>
-        <div>
+        <div className='row d-flex justify-content-center me-5'>
           {projectBig.map((card, i) => (
             <Card
               key={i}
@@ -63,7 +63,7 @@ export const Project = () => {
           ))}
         </div>
 
-        <div className="row d-flex justify-content-between" style={{ marginBottom: '10vh' }}>
+        <div className="row d-flex justify-content-center me-5" style={{ marginBottom: '10vh' }}>
           {projectSmall.map((item, i) => (
             <SmallCard
               key={i}

@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import imagePortfolio from "../asset/1.png"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { Transition } from "../component/Transition";
@@ -7,21 +7,40 @@ import { RevealAni } from "../component/RevealAni";
 export const Home = () => {
     const targetRef = useRef(null);
     // const targetRef2 = useRef(null);
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(()=>{
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    
     const { scrollYProgress } = useScroll({
         target: targetRef,
         offset: ["end end", "end start"],
     });
 
+    const commonMarTop = windowWidth <= 990 ? '10vh' : '100vh';
+    const commonPad = windowWidth <=990 ? '50vh' : '0vh';
+
+
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
     // const opacity1 = useTransform(scrollYProgress, [1, 0.5], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0, 2], [1, 0.2]);
+    const scale = useTransform(scrollYProgress, [0, 5], [1, 0.5]);
 
     return (
         <>
         <Transition />
             <div className="container-md position-relative" id='home'>
-                <motion.div ref={targetRef} className="row position-fixed" style={{ opacity, scale, top: '10%' }}>
-                    <div className="col-md d-flex align-items-center">
+               
+                <motion.div ref={targetRef} className={windowWidth <=990 ? "row mt-5 pt-5 position-relative" : "row position-fixed"} style={{ opacity, scale, top: '10%' }}>
+                    <div className="col-md mt-5 d-flex align-items-center">
                         <div className='m-5'>
                             <div className="d-flex align-items-center"><RevealAni>Hi I'm</RevealAni><RevealAni><span className='fs-1 ms-2 fw-bold'>Gaurav Shreenet</span></RevealAni></div><br />
                             <RevealAni><span className="tag">Jr. Front-End Dev.</span></RevealAni><br /><br />
@@ -36,14 +55,14 @@ export const Home = () => {
                     </div>
                 </motion.div>
 
-                <div style={{ marginTop: '100vh' }}>
+                <div style={{ marginTop: commonMarTop }}>
                     <div style={{ height: '100vh', width: '100%' }}>
                         <div className="overflow-hidden" style={{ position: 'sticky', top: '40vh' }}>
                             <div className="text-center" style={{ fontSize: '3rem', fontWeight: 'bold', fontFamily: 'Roboto, sans-serif' }}>
                                 Transforming ideas into interactive web experiences.
                             </div>
                         </div>
-                        <div style={{ marginTop: '28vh', overflow: 'hidden', position: 'sticky', top: '40vh', background: 'var(--body-bg)' }}>
+                        <div style={{ marginTop: '28vh', overflow: 'hidden', position: 'sticky', top: '40vh', paddingTop: commonPad, background: 'var(--body-bg)' }}>
                             <div className='contact'>
                                 GET IN
                             </div>
@@ -56,8 +75,6 @@ export const Home = () => {
 
                 <div className="row mt-5" id="contact">
                     <div className="col d-flex justify-content-center" >
-
-
                     </div>
                     <div className="z-2">
                         <form className='d-flex justify-content-center' style={{ marginTop: '25vh' }}>
