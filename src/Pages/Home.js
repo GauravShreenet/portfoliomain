@@ -3,6 +3,7 @@ import imagePortfolio from "../asset/1.png"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { Transition } from "../component/Transition";
 import { RevealAni } from "../component/RevealAni";
+import cvFile from "../asset/GauravResume.pdf"
 
 export const Home = () => {
     const targetRef = useRef(null);
@@ -45,7 +46,7 @@ export const Home = () => {
                             <div className="d-flex align-items-center"><RevealAni>Hi I'm</RevealAni><RevealAni><span className='fs-1 ms-2 fw-bold'>Gaurav Shreenet</span></RevealAni></div><br />
                             <RevealAni><span className="tag">Jr. Front-End Dev.</span></RevealAni><br /><br />
                             <RevealAni><span className='mt-5'>React is my canvas; code is my art. I bring ideas to life, crafting inspiring user interfaces.</span></RevealAni><br /><br /> <br />
-                            <button className='btn btn-primary fw-bold'>Download CV <i class="fa-solid fa-download"></i></button>
+                            <a href={cvFile} download><button className='btn btn-primary fw-bold'>Download CV <i class="fa-solid fa-download"></i></button></a>
                         </div>
                     </div>
                     <div className="col-lg mt-5">
@@ -77,19 +78,19 @@ export const Home = () => {
                     <div className="col d-flex justify-content-center" >
                     </div>
                     <div className="z-2">
-                        <form className='d-flex justify-content-center' style={{ marginTop: '25vh' }}>
+                        <form action="https://formsubmit.co/5403d28636684ff0d5b8d7fe9cc9d574" method="POST" className='d-flex justify-content-center' style={{ marginTop: '25vh' }}>
                             <div className='w-75'>
                                 <div className="mb-3 mt-5">
-                                    <input type="text" className='form-control fs-3 bg-transparent text-white rounded-bottom-0' placeholder='Your Name' id='name' />
+                                    <input type="text" className='form-control fs-3 bg-transparent text-white rounded-bottom-0' placeholder='Your Name' name='name' />
                                 </div>
                                 <div className="mb-3">
-                                    <input type="email" className="form-control fs-3 bg-transparent text-white rounded-bottom-0" id="email" placeholder="Your Email" />
+                                    <input type="email" className="form-control fs-3 bg-transparent text-white rounded-bottom-0" name="email" placeholder="Your Email" />
                                 </div>
                                 <div className="mb-3">
-                                    <input type="text" className='form-control fs-3 bg-transparent text-white rounded-bottom-0' placeholder='Subject' id='subject' />
+                                    <input type="text" className='form-control fs-3 bg-transparent text-white rounded-bottom-0' placeholder='Subject' name='subject' />
                                 </div>
                                 <div className="mb-3">
-                                    <textarea className="form-control fs-3 bg-transparent text-white rounded-bottom-0" id="textarea" rows="4" placeholder='Your Message' style={{ resize: 'none' }}></textarea>
+                                    <textarea className="form-control fs-3 bg-transparent text-white rounded-bottom-0" name="message" rows="4" placeholder='Your Message' style={{ resize: 'none' }}></textarea>
                                 </div>
                                 <div className='d-flex justify-content-end'>
                                     <button type="submit" className="btn btn-primary fw-bold mt-5">Send Message <i className="fa-solid fa-paper-plane"></i></button>
