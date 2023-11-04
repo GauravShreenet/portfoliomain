@@ -65,6 +65,11 @@ body {
     position: fixed;
     bottom: -7rem;
     left: -5rem;
+    
+}
+
+.circular-container {
+    position: relative;
 }
 
 .circularText {
@@ -77,10 +82,6 @@ body {
     to {
         transform: rotate(360deg);
     }
-}
-
-.circular-container {
-    position: relative;
 }
 
 .inside {
@@ -189,6 +190,7 @@ body {
 
 .hover-slide:hover {
     transform: translateX(5px);
+    /* Adjust the value to control the amount of slide */
 }
 
 .hover-slide:hover::before {

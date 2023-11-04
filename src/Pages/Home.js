@@ -43,10 +43,11 @@ export const Home = () => {
 
                 <motion.div ref={targetRef} className={windowWidth <= 990 ? "row mt-5 pt-5 position-relative" : "row position-fixed"} style={{ opacity, scale, top: '10%' }}>
                     <div className="col-md mt-5 d-flex align-items-center">
-                        <div className='m-5'>
+                        <div className='my-5 z-3'>
                             <div className="d-flex align-items-center"><RevealAni>Hi I'm</RevealAni><RevealAni><span className='fs-1 ms-2 fw-bold'>Gaurav Shreenet</span></RevealAni></div>
                             <RevealAni><span className="tag">Jr. Front-End Dev.</span></RevealAni><br /><br />
-                            <RevealAni><span className='mt-5'>React is my canvas; code is my art. I bring ideas to life, crafting inspiring user interfaces.</span></RevealAni><br /><br />                            <a href={cvFile} download><button className='btn btn-primary fw-bold'>Download CV <i class="fa-solid fa-download"></i></button></a>
+                            <RevealAni><span className='mt-5'>React is my canvas; code is my art. I bring ideas to life, crafting inspiring user interfaces.</span></RevealAni><br /><br /> 
+                            <a href={cvFile} download><button className='btn btn-primary fw-bold'>Download CV <i class="fa-solid fa-download"></i></button></a>
                         </div>
                     </div>
                     <div className="col-lg mt-5">
@@ -59,7 +60,6 @@ export const Home = () => {
                             <CircularText />
                         </div>
                     </div>
-
                 </motion.div>
 
                 <div style={{ marginTop: commonMarTop }}>
