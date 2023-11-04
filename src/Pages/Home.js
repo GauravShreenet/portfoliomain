@@ -57,15 +57,9 @@ export const Home = () => {
                     </div>
                 </motion.div>
 
-                <div className="circle bg-success">
-                    <div className="d-flex justify-content-center align-items-center">
-                        <CircularText />
-                        <div className="inside">
-                            <b>Hire Me</b>
-                        </div>
-                    </div>
-                </div>
-
+                <div className="circle">
+                    <CircularText />
+                </div> 
 
                 <div style={{ marginTop: commonMarTop }}>
                     <div style={{ height: '100vh', width: '100%' }}>
