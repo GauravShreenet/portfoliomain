@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { Transition } from "../component/Transition";
 import { RevealAni } from "../component/RevealAni";
 import cvFile from "../asset/GauravResume.pdf"
+import { CircularText } from "../component/CircularText";
 
 export const Home = () => {
     const targetRef = useRef(null);
@@ -11,7 +12,7 @@ export const Home = () => {
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    useEffect(()=>{
+    useEffect(() => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
         };
@@ -21,14 +22,14 @@ export const Home = () => {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
-    
+
     const { scrollYProgress } = useScroll({
         target: targetRef,
         offset: ["end end", "end start"],
     });
 
     const commonMarTop = windowWidth <= 990 ? '10vh' : '100vh';
-    const commonPad = windowWidth <=990 ? '50vh' : '0vh';
+    const commonPad = windowWidth <= 990 ? '50vh' : '0vh';
 
 
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
@@ -37,10 +38,10 @@ export const Home = () => {
 
     return (
         <>
-        <Transition />
+            <Transition />
             <div className="container-md position-relative" id='home'>
-               
-                <motion.div ref={targetRef} className={windowWidth <=990 ? "row mt-5 pt-5 position-relative" : "row position-fixed"} style={{ opacity, scale, top: '10%' }}>
+
+                <motion.div ref={targetRef} className={windowWidth <= 990 ? "row mt-5 pt-5 position-relative" : "row position-fixed"} style={{ opacity, scale, top: '10%' }}>
                     <div className="col-md mt-5 d-flex align-items-center">
                         <div className='m-5'>
                             <div className="d-flex align-items-center"><RevealAni>Hi I'm</RevealAni><RevealAni><span className='fs-1 ms-2 fw-bold'>Gaurav Shreenet</span></RevealAni></div><br />
@@ -56,9 +57,15 @@ export const Home = () => {
                     </div>
                 </motion.div>
 
-                <div className="circle">
-                    Hire Me
+                <div className="circle bg-success">
+                    <div className="d-flex justify-content-center align-items-center">
+                        <CircularText />
+                        <div className="inside">
+                            <b>Hire Me</b>
+                        </div>
+                    </div>
                 </div>
+
 
                 <div style={{ marginTop: commonMarTop }}>
                     <div style={{ height: '100vh', width: '100%' }}>

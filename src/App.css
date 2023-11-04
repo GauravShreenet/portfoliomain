@@ -62,14 +62,34 @@ body {
 }
 
 .circle {
+    position: fixed;
+    bottom: 8rem;
+    left: 1rem;
+    height: 8rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circularText {
+    animation: rotate 10s linear infinite;
+    fill: var(--text-color);
+    transform-origin: 180px 180px;
+}
+
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.inside {
     background: var(--text-color);
     color: var(--body-bg);
     border: 2px solid var(--text-color);
     height: 5rem;
     width: 5rem;
-    position: fixed;
-    bottom: 5.5rem;
-    left: 5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -78,7 +98,7 @@ body {
     cursor: pointer;
 }
 
-.circle:hover {
+.inside:hover {
     background: var(--body-bg);
     color: var(--text-color);
 }
