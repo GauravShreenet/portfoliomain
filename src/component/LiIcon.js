@@ -10,7 +10,7 @@ export const LiIcon = ({reference}) => {
   )
 
   return (
-    <figure className='position-absolute' style={{left: '-1.5%'}}>
+    <figure className='position-absolute' style={{left: '-1.75%'}}>
       <svg width="6vw" height="6vw" viewBox='0 0 100 100'>
         <circle cx="75" cy="50" r="20" fill='none' />
         <motion.circle cx="75" cy="50" r="20" fill="text-color" stroke="var(--text-color)" strokeWidth="5px" 

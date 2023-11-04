@@ -56,6 +56,10 @@ export const Home = () => {
                     </div>
                 </motion.div>
 
+                <div className="circle">
+                    Hire Me
+                </div>
+
                 <div style={{ marginTop: commonMarTop }}>
                     <div style={{ height: '100vh', width: '100%' }}>
                         <div className="overflow-hidden" style={{ position: 'sticky', top: '40vh' }}>

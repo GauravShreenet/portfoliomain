@@ -13,7 +13,7 @@ export const Project = () => {
   const projectBig = [
     {
       image: imageMovie,
-      title: "Move API",
+      title: "Movie API",
       descrip: "Discover and save your favorite movies with ease. Search for movies and organize your selections in a way that suits your preference.",
       linkGit: "https://github.com/GauravShreenet/MovieApi",
       linkPage: "https://movie-api-taupe.vercel.app/"
