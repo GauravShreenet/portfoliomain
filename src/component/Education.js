@@ -8,12 +8,13 @@ const Details = ({ type, time, place, info }) => {
     return (
     <li ref={ref} className='mb-5 d-flex flex-column align-items-center justify-content-between'>
         
-        <LiIcon reference={ref}/>
+        
         <motion.div
         initial={{y:50}}
         whileInView={{y:0}}
         transition={{duration:0.5, type: "spring"}}
         >
+            <LiIcon reference={ref}/>
             <h5 className='fw-bold text-capitalize'>
                 {type}
             </h5>
@@ -47,7 +48,7 @@ export const Education = () => {
                 <div className='col-1 d-flex justify-content-center'>
                 
                     <motion.div 
-                    className='position-absolute top-0 bottom-0' style={{width: '4px', background: 'var(--text-color)', scaleY: scrollYProgress, transformOrigin: 'top'}} />
+                    className='position-absolute top-0 bottom-0' style={{left: '3.5rem',width: '4px', background: 'var(--text-color)', scaleY: scrollYProgress, transformOrigin: 'top'}} />
                 </div>
                 <div className="col-11">
                 <ul className='d-flex flex-column align-items-start justify-content-between'>

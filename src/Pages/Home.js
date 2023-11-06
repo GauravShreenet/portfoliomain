@@ -34,15 +34,15 @@ export const Home = () => {
 
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
     // const opacity1 = useTransform(scrollYProgress, [1, 0.5], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0, 5], [1, 0.5]);
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
 
     return (
         <>
             <Transition />
             <div className="container-md position-relative" id='home'>
 
-                <motion.div ref={targetRef} className={windowWidth <= 990 ? "row mt-5 pt-5 position-relative" : "row position-fixed"} style={{ opacity, scale, top: '10%' }}>
-                    <div className="col-md mt-5 d-flex align-items-center">
+                <motion.div ref={targetRef} className={windowWidth <= 990 ? "row mt-5 pt-5 position-relative" : "row position-fixed"} style={{ opacity, scale, top: '10%', transformOrigin: 'top left', }}>
+                    <div className="col-md mt-5 d-flex align-items-center justify-content-start">
                         <div className='my-5 z-3'>
                             <div className="d-flex align-items-center"><RevealAni>Hi I'm</RevealAni><RevealAni><span className='fs-1 ms-2 fw-bold'>Gaurav Shreenet</span></RevealAni></div>
                             <RevealAni><span className="tag">Jr. Front-End Dev.</span></RevealAni><br /><br />
