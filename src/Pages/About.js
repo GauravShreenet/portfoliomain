@@ -57,7 +57,7 @@ export const About = () => {
               I'm eager to connect with tech enthusiasts and potential collaborators to explore the limitless possibilities of web development.
             </p></RevealAni>
           </div>
-          <div className='col-md d-flex justify-content-center align-items-center'>
+          <div className='col-md ms-2 d-flex justify-content-center align-items-center'>
             <div className="mb-5 boxShad rounded-4 d-flex justify-content-center align-items-center">
               <div className='boxCon rounded-5' />
               <div className="imageAbout d-flex justify-content-center align-items-center">

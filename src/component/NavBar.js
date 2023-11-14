@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { useTransition, animated } from 'react-spring';
 import { NavMenu } from './NavMenu';
 import logo from "../asset/gs-logo.png"
+import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
 
@@ -24,7 +25,7 @@ export const NavBar = () => {
             <div className="row z-3">
                 <div className="col z-3">
                     <div>
-                        <img src={logo} alt="" style={{height: '10vh', width: '15vh'}}/>
+                        <Link to="/"><img src={logo} alt="" style={{height: '10vh', width: '15vh'}}/></Link>
                     </div>
                     
                 </div>
