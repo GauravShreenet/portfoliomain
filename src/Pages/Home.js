@@ -41,7 +41,7 @@ export const Home = () => {
             <Transition />
             <div className="container-md position-relative" id='home'>
 
-                <motion.div ref={targetRef} className={windowWidth <= 990 ? "row mt-5 pt-5 position-relative" : "row position-fixed"} style={{ opacity, scale, top: '10%', transformOrigin: 'top left', }}>
+                <motion.div ref={targetRef} className={windowWidth <= 990 ? "row mt-5 pt-5 position-relative z-0" : "row position-fixed"} style={{ opacity, scale, top: '10%', transformOrigin: 'top left', }}>
                     <div className="col-md mt-5 d-flex align-items-center justify-content-start">
                         <div className='my-5 z-3'>
                             <div className="d-flex align-items-center"><RevealAni>Hi I'm</RevealAni><RevealAni><span className='fs-1 ms-2 fw-bold'>Gaurav Shreenet</span></RevealAni></div>
