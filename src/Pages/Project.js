@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from '../component/Card'
 import imageMovie from '../asset/movieapi.PNG'
-import imageSuper from '../asset/SuperApi.PNG'
+import imageTranscation from '../asset/TransactionApp.PNG'
 import imageRpc from '../asset/RockPaperScissor.PNG'
 import imagePrank from '../asset/prankCal.PNG'
 import { SmallCard } from '../component/SmallCard'
@@ -12,19 +12,20 @@ export const Project = () => {
 
   const projectBig = [
     {
+      image: imageTranscation,
+      title: "Transaction App",
+      descrip: "Streamline Your Finances with Seamless Transactions Anywhere, Anytime! Experience Effortless Management and Control Over Your Money Flow!",
+      linkGit: "https://github.com/GauravShreenet/transa-client",
+      linkPage: "https://transa-client.vercel.app/"
+    },
+    {
       image: imageMovie,
       title: "Movie API",
       descrip: "Discover and save your favorite movies with ease. Search for movies and organize your selections in a way that suits your preference.",
       linkGit: "https://github.com/GauravShreenet/MovieApi",
       linkPage: "https://movie-api-taupe.vercel.app/"
     },
-    {
-      image: imageSuper,
-      title: "SuperHuman API",
-      descrip: "Discover and get the details of comic characters with ease. Search for heroes and villains to know their stats.",
-      linkGit: "https://github.com/GauravShreenet/superhuman",
-      linkPage: "https://superhuman.vercel.app/"
-    },
+    
   ]
 
   const projectSmall = [
