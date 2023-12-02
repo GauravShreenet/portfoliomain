@@ -4,6 +4,7 @@ import { useTransition, animated } from 'react-spring';
 import { NavMenu } from './NavMenu';
 import logo from "../asset/gs-logo.png"
 import { Link } from 'react-router-dom';
+import { CircularText } from './CircularText';
 
 export const NavBar = () => {
 

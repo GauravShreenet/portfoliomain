@@ -32,7 +32,7 @@ export const Home = () => {
     const commonPad = windowWidth <= 990 ? '50vh' : '0vh';
 
 
-    const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+    const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
     // const opacity1 = useTransform(scrollYProgress, [1, 0.5], [0, 1]);
     const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
 
@@ -42,20 +42,20 @@ export const Home = () => {
             <div className="container-md position-relative" id='home'>
 
                 <motion.div ref={targetRef} className={windowWidth <= 990 ? "row mt-5 pt-5 position-relative z-0" : "row position-fixed"} style={{ opacity, scale, top: '10%', transformOrigin: 'top left', }}>
-                    <div className="col-md mt-5 d-flex align-items-center justify-content-start">
+                    <div className="col-md mt-5 d-flex align-items-center justify-content-center">
                         <div className='my-5 z-3'>
                             <div className="d-flex align-items-center"><RevealAni>Hi I'm</RevealAni><RevealAni><span className='fs-1 ms-2 fw-bold'>Gaurav Shreenet</span></RevealAni></div>
-                            <RevealAni><span className="tag">Jr. Front-End Dev.</span></RevealAni><br /><br />
+                            <RevealAni><span className="tag">Front-End Dev.</span></RevealAni><br /><br />
                             <RevealAni><span className='mt-5'>React is my canvas; code is my art. I bring ideas to life, crafting inspiring user interfaces.</span></RevealAni><br /><br /> 
                             <a href={cvFile} download><button className='btn btn-primary fw-bold'>Download CV <i class="fa-solid fa-download"></i></button></a>
                         </div>
                     </div>
-                    <div className="col-lg mt-5">
+                    <div className="col-lg mt-5 d-flex justify-content-center align-items-center">
                         <div className="image-resize d-flex justify-content-center align-items-center">
                             <img src={imagePortfolio} alt="Portfolio" className="img-fluid" />
                         </div>
                     </div>
-                    <div className="position-relative">
+                    <div className="d-none d-md-flex position-relative">
                         <div className="circle">
                             <CircularText />
                         </div>
@@ -65,7 +65,7 @@ export const Home = () => {
                 <div style={{ marginTop: commonMarTop }}>
                     <div style={{ height: '100vh', width: '100%' }}>
                         <div className="overflow-hidden" style={{ position: 'sticky', top: '40vh' }}>
-                            <div className="text-center" style={{ fontSize: '3rem', fontWeight: 'bold', fontFamily: 'Roboto, sans-serif' }}>
+                            <div className="text-center display-5" style={{ fontWeight: 'bold', fontFamily: 'Roboto, sans-serif' }}>
                                 Transforming ideas into interactive web experiences.
                             </div>
                         </div>
@@ -73,7 +73,7 @@ export const Home = () => {
                             <div className='contact'>
                                 GET IN
                             </div>
-                            <div className='contact'>
+                            <div className='contact display-5'>
                                 TOUCH
                             </div>
                         </div>
