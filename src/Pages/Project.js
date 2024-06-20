@@ -5,8 +5,8 @@ import imageFashion from '../asset/e-comerce.PNG'
 import imageLibrary from '../asset/lib.PNG'
 import imageCafe from '../asset/CafeApp.PNG'
 import imageTranscation from '../asset/TransactionApp.PNG'
-import imageRpc from '../asset/RockPaperScissor.PNG'
 import imagePrank from '../asset/prankCal.PNG'
+import imageSuper from '../asset/SuperApi.PNG'
 import { SmallCard } from '../component/SmallCard'
 import { Transition } from '../component/Transition'
 import { RevealAni } from '../component/RevealAni'
@@ -34,15 +34,7 @@ export const Project = () => {
       descrip: "Streamline Your Finances with Seamless Transactions Anywhere, Anytime! Experience Effortless Management and Control Over Your Money Flow!",
       linkGit: "https://github.com/GauravShreenet/transa-client",
       linkPage: "https://transa-client.vercel.app/"
-    },
-    {
-      image: imageMovie,
-      title: "Movie API",
-      descrip: "Discover and save your favorite movies with ease. Search for movies and organize your selections in a way that suits your preference.",
-      linkGit: "https://github.com/GauravShreenet/MovieApi",
-      linkPage: "https://movie-api-taupe.vercel.app/"
-    },
-    
+    },    
   ]
 
   const projectSmall = [
@@ -57,6 +49,12 @@ export const Project = () => {
       title: "Movie API",
       linkGit: "https://github.com/GauravShreenet/MovieApi",
       linkPage: "https://movie-api-taupe.vercel.app/"
+    },
+    {
+      image: imageSuper,
+      title: "Super Hero Detail",
+      linkGit: "https://github.com/GauravShreenet/superhuman",
+      linkPage: "https://superhuman.vercel.app/"
     },
     {
       image: imagePrank,
@@ -87,7 +85,7 @@ export const Project = () => {
           ))}
         </div>
 
-        <div className="row d-flex justify-content-center me-5" style={{ marginBottom: '10vh' }}>
+        <div className="row d-flex flex-wrap justify-content-center me-5" style={{ marginBottom: '5vh' }}>
           {projectSmall.map((item, i) => (
             <SmallCard
               key={i}
@@ -101,7 +99,7 @@ export const Project = () => {
         </div>
 
         <div style={{ marginBottom: '20vh' }}>
-          <div className="fs-6 text-uppercase" style={{ marginTop: '30vh' }}>
+          <div className="fs-6 text-uppercase" style={{ marginTop: '20vh' }}>
           <RevealAni>there's more</RevealAni>
           </div>
           <h3 className='mt-3 fw-bold'><RevealAni>GitHub Projects</RevealAni></h3>
