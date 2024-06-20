@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card } from '../component/Card'
 import imageMovie from '../asset/movieapi.PNG'
+import imageFashion from '../asset/e-comerce.PNG'
 import imageTranscation from '../asset/TransactionApp.PNG'
 import imageRpc from '../asset/RockPaperScissor.PNG'
 import imagePrank from '../asset/prankCal.PNG'
@@ -11,6 +12,13 @@ import { RevealAni } from '../component/RevealAni'
 export const Project = () => {
 
   const projectBig = [
+    {
+      image: imageFashion,
+      title: "E-Commerce Fashion App",
+      descrip: "Welcome to BGS, your ultimate destination for trendy and high-quality fashion, offering a curated selection of clothing and accessories designed to elevate your style and confidence.",
+      linkGit: "https://github.com/GauravShreenet/Store-User-CMS-client",
+      linkPage: "http://bgsstore.s3-website-us-east-1.amazonaws.com/"
+    },
     {
       image: imageTranscation,
       title: "Transaction App",
