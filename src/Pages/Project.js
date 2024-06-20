@@ -2,6 +2,7 @@ import React from 'react'
 import { Card } from '../component/Card'
 import imageMovie from '../asset/movieapi.PNG'
 import imageFashion from '../asset/e-comerce.PNG'
+import imageLibrary from '../asset/lib.PNG'
 import imageTranscation from '../asset/TransactionApp.PNG'
 import imageRpc from '../asset/RockPaperScissor.PNG'
 import imagePrank from '../asset/prankCal.PNG'
@@ -18,6 +19,13 @@ export const Project = () => {
       descrip: "Welcome to BGS, your ultimate destination for trendy and high-quality fashion, offering a curated selection of clothing and accessories designed to elevate your style and confidence.",
       linkGit: "https://github.com/GauravShreenet/Store-User-CMS-client",
       linkPage: "http://bgsstore.s3-website-us-east-1.amazonaws.com/"
+    },
+    {
+      image: imageLibrary,
+      title: "Library App",
+      descrip: "Discover endless possibilities, your go-to library app featuring a robust CMS system that allows you to access and manage a vast collection of books, audiobooks, and digital resources anytime, anywhere, making reading and learning more convenient and enjoyable than ever.",
+      linkGit: "https://github.com/GauravShreenet/Library-client",
+      linkPage: "https://library-client-rho.vercel.app/"
     },
     {
       image: imageTranscation,
