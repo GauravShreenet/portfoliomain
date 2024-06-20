@@ -3,6 +3,7 @@ import { Card } from '../component/Card'
 import imageMovie from '../asset/movieapi.PNG'
 import imageFashion from '../asset/e-comerce.PNG'
 import imageLibrary from '../asset/lib.PNG'
+import imageCafe from '../asset/CafeApp.PNG'
 import imageTranscation from '../asset/TransactionApp.PNG'
 import imageRpc from '../asset/RockPaperScissor.PNG'
 import imagePrank from '../asset/prankCal.PNG'
@@ -46,10 +47,16 @@ export const Project = () => {
 
   const projectSmall = [
     {
-      image: imageRpc,
-      title: "Rock Paper Scissors",
-      linkGit: "https://github.com/GauravShreenet/RockPaperScissors",
-      linkPage: "https://gauravshreenet.github.io/RockPaperScissors/"
+      image: imageCafe,
+      title: "Cafe Front-End Design",
+      linkGit: "https://github.com/GauravShreenet/CafeApp",
+      linkPage: "https://cafe-app-ten.vercel.app/"
+    },
+    {
+      image: imageMovie,
+      title: "Movie API",
+      linkGit: "https://github.com/GauravShreenet/MovieApi",
+      linkPage: "https://movie-api-taupe.vercel.app/"
     },
     {
       image: imagePrank,
